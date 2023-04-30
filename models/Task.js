@@ -1,20 +1,21 @@
-// CONF. MODULOS \\
-const mongoose = require("mongoose");
+//---------- CONF. MODULOS ----------\\
+const mongoose = require('mongoose');
 
-// CONF. DATABASE \\
+//---------- CONF. DATABASE ----------\\
 const taskSchema = new mongoose.Schema({
-  task: {
-    type: String,
-    require: true,
-  },
-  check: {
-    type: Boolean,
-    default: false,
-  },
-  date: {
-    type: Date,
-    default: Date.now(),
-  },
+    task: {
+        type: String,
+        require: true,
+    },
+    check: {
+        type: Boolean,
+        default: false,
+    },
+    date: {
+        type: Date,
+        default: Date.now(),
+    },
 });
 
-module.exports = mongoose.model("Task", taskSchema);
+//---------- CONF. EXPORTS ----------\\
+module.exports = mongoose.model('Task', taskSchema);

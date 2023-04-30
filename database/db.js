@@ -1,7 +1,7 @@
-//CONF. MOFULOS \\
+//---------- CONF. MODULOS ----------\\
 const mongoose = require('mongoose');
 
-// CONF. CONEXAO BANDO DE DADOS \\
+//---------- CONF. DB ----------\\
 const connectToDb = () => {
     mongoose
         .connect(
@@ -15,4 +15,5 @@ const connectToDb = () => {
         .catch(err => console.log(err));
 };
 
+//---------- CONF. EXPORTS ----------\\
 module.exports = connectToDb;

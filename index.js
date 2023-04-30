@@ -5,21 +5,21 @@ const routes = require('./routes/routes');
 const connectToDb = require('./database/db');
 const app = express();
 
-// CONF. PORTA \\
+//---------- CONF. PORTA ----------\\
 const port = 3000;
 
-// CONF. BANCO DE DADOS \\
+//---------- CONF. BD ----------\\
 connectToDb();
 
-// CONF. ENGENI \\
+//---------- CONF. ENGINE ----------\\
 app.set('view engine', 'ejs');
 app.use(express.static(path.join(__dirname, 'public')));
 app.use(express.urlencoded());
 
-//CONF. ROTAS \\
+//---------- CONF. ROTAS ----------\\
 app.use(routes);
 
-// CONF. SREVIDOR \\
+//---------- CONF. SERVIDOR ----------\\
 app.listen(port, () => {
     console.log(`Servidor Rodando em http://localhost:${port}`);
 });
