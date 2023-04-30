@@ -1,14 +1,20 @@
 {
-  "name": "to-do-list",
-  "version": "1.0.0",
-  "description": "Projeto em Nodejs MVC com Mongodb",
-  "main": "index.js",
-  "scripts": {
-    "start": "node index"
-  },
-  "author": "JULIOPASCHOAL",
-  "license": "ISC",
-  "dependencies": {
-    "express": "^4.18.2"
-  }
+    "name": "to-do-list",
+    "version": "1.0.0",
+    "description": "Projeto To Do List",
+    "main": "index.js",
+    "scripts": {
+        "start": "nodemon index"
+    },
+    "author": "JulioPAschoal",
+    "license": "ISC",
+    "dependencies": {
+        "dotenv": "^16.0.3",
+        "ejs": "^3.1.9",
+        "express": "^4.18.2",
+        "mongoose": "^7.1.0"
+    },
+    "devDependencies": {
+        "nodemon": "^2.0.22"
+    }
 }
